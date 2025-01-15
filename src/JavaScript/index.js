@@ -3,30 +3,13 @@ import { footer } from "../../Components/Footer.js";
 import { Card } from "../../Components/Card.js";
 import { mockData } from "../../mock-data/home-page-card-mock-data.js";
 
-const myCardEle = document.getElementById('myCard')
+const myCardEle = document.getElementById("myCard");
 
-async function fetchPosts() {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/posts`) 
-  return await response.json()
-}
-
-window.onload = async function () {
-
-  // fetch(`https://jsonplaceholder.typicode.com/posts`)
-  // .then(res => res.json())
-  // .then(json => {
-  //   json.map(data => {
-  //     myCardEle.innerHTML += Card(data)
-  //   })
-  // })
-
-  const posts = await fetchPosts()
-
-  posts.map(data => {
-    myCardEle.innerHTML += Card(data)
-  })
-
-}
+window.onload = function () {
+  mockData.forEach((data) => {
+    myCardEle.innerHTML += Card(data);
+  });
+};
 
 
 // Function to inject components

@@ -1,31 +1,24 @@
 export const mockData = [
-    {
-      title: "Hello welcome to Cambodia",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    {
-      title: "Welcome to JavaScript with API",
-      paragraph: "The best way to get started is to try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
-    },
-    
-  ]
+  {
+    title: "Why can’t we read anymore?",
+    body: "Content of the article...",
+    author: "William JB.",
+    authorImage: "/Asset/Photo/img-card (3).jpg",
+    illustrationImage: "/Asset/Photo/img-card (3).jpg",
+    hashtags: "#reading #literature",
+    date: "24.04.2024",
+    likes: "2.3K",
+    comments: "231",
+  },
+  {
+    title: "The Future of Technology",
+    body: "Content about technology...",
+    author: "Jane Doe",
+    authorImage: "/Asset/Photo/img-card (3).jpg",
+    illustrationImage: "/Asset/Photo/img-card (3).jpg",
+    hashtags: "#technology #future",
+    date: "15.01.2025",
+    likes: "3.5K",
+    comments: "540",
+  },
+];

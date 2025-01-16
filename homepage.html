@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" src="/src/JavaScript/index.js" defer></script>
+    <style>
+      .margin-l-f {
+        margin: 0 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 z-50"></header>
+    <main>
+      <!-- hero frame -->
+      <section class="relative w-full h-screen overflow-hidden">
+        <!-- Slider Container -->
+        <div class="relative w-full h-full">
+          <!-- Slider Items -->
+          <div
+            id="slider"
+            class="flex w-full h-full transition-transform duration-500"
+          >
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 relative h-full">
+              <img
+                src="/Asset/Photo/Ai-Photo2.jpg"
+                alt="Slide 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-5 left-5 text-white">
+                <h2 class="text-3xl font-bold">
+                  Should You Use AI as a Writer?
+                </h2>
+                <p class="mt-1 text-lg">
+                  A Shift That Puts You Ahead of 99% of Writers
+                </p>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 relative h-full">
+              <img
+                src="/Asset/Photo/education1.jpg"
+                alt="Slide 2"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-5 left-5 text-white">
+                <h2 class="text-3xl font-bold">Explore AI Tools</h2>
+                <p class="mt-1 text-lg">Boost Your Productivity</p>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 relative h-full">
+              <img
+                src="https://jobsearchandinterviewcoach.com/wp-content/uploads/2023/11/Soft-Skills-image-on-blackboard.jpg"
+                alt="Slide 3"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-5 left-5 text-white">
+                <h2 class="text-3xl font-bold">AI and the Future</h2>
+                <p class="mt-1 text-lg">Where Are We Heading?</p>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Discover
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button
+            id="prev"
+            class="absolute top-1/2 left-3 -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out"
+          >
+            &#8592;
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-3 -translate-y-1/2 text-black bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out"
+          >
+            &#8594;
+          </button>
+        </div>
+      </section>
+      <!--Recently blog-->
+      <section class="my-6">
+        <!-- label blog -->
+        <div
+          data-aos="fade-right"
+          class="mx-12 flex bg-blue-300 items-center justify-center h-[45px] font-bold text-white stroke-blue-300 rounded-full"
+        >
+          <h2>Recently</h2>
+        </div>
+        <!-- blog1 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/a2.webp"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog2 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (5).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[300px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-1 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nostrum laudantium sit enim cum
+                optio, impedit temporibus aliquam adipisci molestiae quibusdam
+                itaque quidem alias rerum velit laboriosam atque? Dignissimos,
+                aut ad!
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog3 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog4 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog5 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog6 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog7 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+      </section>
+      <!--popular blog-->
+      <section class="my-6">
+        <!-- label blog -->
+        <div
+          class="font-bold text-white h-[45px] bg-blue-300 mx-12 flex items-center justify-center"
+        >
+          <h2>Recently</h2>
+        </div>
+        <!-- blog1 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/a2.webp"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog2 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (5).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[300px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-1 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nostrum laudantium sit enim cum
+                optio, impedit temporibus aliquam adipisci molestiae quibusdam
+                itaque quidem alias rerum velit laboriosam atque? Dignissimos,
+                aut ad!
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog3 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog4 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog5 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog6 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog7 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/img-for-card (8).jpg"
+                alt="Illustration"
+                class="h-auto w-screen lg:w-[350px] lg:h-auto rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h4
+                class="text-lg sm:text-2xl lg:text-2xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Stop Doing Tutorials. Learn Programming like this Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Recusandae
+                doloribus deleniti eum quia optio molestiae alias animi nostrum
+                quisquam illo distinctio delectus sed, dolores perspiciatis
+                sunt, eligendi, modi vel perferendis?
+              </h4>
+              <p class="text-sm sm:text-base text-gray-500 mb-4">
+                <small class="hover:font-bold"
+                  ><a href="/src/html/general.html">#<u>General</u></a></small
+                >
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-gray-600 mb-6">
+                Learn programming faster and better
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+      </section>
+      <!--Trending blog-->
+      <section class="my-6">
+        <!-- label blog -->
+        <div
+          class="font-bold text-white h-[45px] bg-blue-300 mx-12 flex items-center justify-center"
+        >
+          <h2>Recently</h2>
+        </div>
+        <!-- blog1 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog2 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog3 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog4 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog5 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (5).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog6 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+        <!-- blog7 -->
+        <div
+          class="margin-l-f bg-white dark:bg-gray-100 mt-6 rounded-sm hover:shadow-md h-auto p-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div
+            class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5"
+          >
+            <!-- Profile Section -->
+            <div
+              class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2"
+            >
+              <img
+                src="/Asset/Photo/user.webp"
+                alt="Profile"
+                class="w-9 h-9 rounded-full"
+              />
+              <span class="text-black text-sm sm:text-base md:text-lg">
+                <small>William JB.</small>
+              </span>
+            </div>
+
+            <!-- Illustration -->
+            <div
+              class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2"
+            >
+              <img
+                src="/Asset/Photo/img-card (3).jpg"
+                alt="Illustration"
+                class="min-w-80 h-auto w-screen lg:w-[10px] lg:h-150px] rounded-sm transform transition duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Title and Content -->
+            <div
+              class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2"
+            >
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-gray-100 mb-2"
+              >
+                Title
+              </h2>
+              <p class="text-sm sm:text-base text-black mb-4">
+                <small class="hover:font-bold">#hashtag</small>
+              </p>
+              <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
+                Why can’t we read anymore?
+              </p>
+              <div
+                class="grid grid-cols-2 text-sm sm:text-base text-black mb-4"
+              >
+                <!-- Left Icons -->
+                <div class="flex items-center space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-heart"></i>
+                    <span>2.3K</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-comment"></i>
+                    <span>231</span>
+                  </div>
+                </div>
+                <!-- Right Icons -->
+                <div class="flex justify-end items-center space-x-6">
+                  <div>
+                    <i class="fas fa-bookmark"></i>
+                  </div>
+                  <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-blue-300">
+                <small>Date: 24.04.2024</small>
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line at the bottom -->
+          <div class="row-start-4 col-span-full">
+            <hr class="mt-6 border-gray-300 dark:border-gray-800" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="/src/JavaScript/index.js"></script>
+    <script>
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
+
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-5xl p-6 bg-white rounded-lg shadow-lg">
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Account</h1>
+      </div>
+
+      <!-- Grid of Account Options -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Option Card -->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-regular fa-address-card"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">Personal Info</h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Provide personal details and how we can reach you.
+          </p>
+        </div>
+
+        <!-- Repeated Option Cards -->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-solid fa-shield-halved"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9.75V12a2.25 2.25 0 004.5 0v-1.5A4.5 4.5 0 1112 9.75z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 15v2.25m0 3v1.5m-5.25-1.5a9 9 0 1010.5 0"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-800">Login & Security</h3>
+          </div>
+          <p class="text-sm text-gray-600">
+            Update your password and secure your account.
+          </p>
+        </div>
+
+
+        <!-- Privacy -->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-regular fa-eye"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 7.5v.375a4.875 4.875 0 01-9.75 0V7.5m9.75 0v-.375A4.875 4.875 0 0010.5 3v.375m9.75 0V7.5M10.5 3v.375m0 9.75v4.875m-4.875-4.5V10.5m9.75 7.125H6.75m9.75 0H20.25m-5.625-2.25h-.375"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-800">Privacy & Sharing</h3>
+          </div>
+          <p class="text-sm text-gray-600">
+            Manage your personal data and sharing settings.
+          </p>
+        </div>
+        <!--Taxes-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+                <i class="fa-solid fa-table-columns"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">Taxes</h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Manage taxpayer information and tax documents.
+          </p>
+        </div>
+        <!--Notifications-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+                <i class="fa-regular fa-bell"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">Notifications</h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Choose notification preferences and how you want to be contacted.
+          </p>
+        </div>
+        <!--Payments & payouts-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-regular fa-credit-card"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">
+              Payments & payouts
+            </h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Review payments, payouts, coupons, and gift cards.
+          </p>
+        </div>
+
+        <!--Global preferences-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+                <i class="fa-solid fa-language"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">
+              Global preferences
+            </h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Set your default language, currency, and timezone.
+          </p>
+        </div>
+        <!--Travel for work-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-regular fa-map"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">Travel for work</h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Add a work email for business trip benefits.
+          </p>
+        </div>
+        <!--Professional hosting tools-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+              <i class="fa-solid fa-chart-simple"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">
+              Professional hosting tools
+            </h3>
+          </div>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">
+            Get professional tools if you manage several properties on Airbnb.
+          </p>
+        </div>
+        <!--Referral credit & coupon-->
+        <div
+          class="p-4 bg-gray-50 border rounded-lg shadow hover:shadow-md hover:bg-gray-100 transition cursor-pointer"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <!-- Icon -->
+            <div class="p-2 bg-gray-200 rounded-full">
+                <i class="fa-regular fa-square-check"></i>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16.5v4.75"
+                />
+              </svg>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-gray-800">
+              Referral credit & coupon
+
+            </h3>
+        </div>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">
+          You have $0 referral credits and coupon. Learn more.
+        </p>
+      </div>
+    </div>
+    <br>
+    <button
+      class="flex items-center gap-2 text-purple-600 font-medium px-4 py-2 bg-purple-100 rounded-lg hover:bg-purple-200 transition"
+      onclick="goBack()"
+    >
+      <!-- Back Icon -->
+      <i class="fa-solid fa-arrow-left-long" style="color: #B197FC;"></i>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M10.75 19.25l-7-7m0 0l7-7m-7 7h16.5"
+        />
+      </svg>
+      Back
+    </button>
+  </div>
+
+  <script>
+    function goBack() {
+      alert("Going back...");
+      // Add your "go back" logic here
+    }
+
+    function clearHistory() {
+      alert("History cleared!");
+      // Add your clear history logic here
+    }
+  </script>
+</body>
+</html>

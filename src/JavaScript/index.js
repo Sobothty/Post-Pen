@@ -1,6 +1,7 @@
 import { navbar } from "../../Components/Navbar.js";
 import { footer } from "../../Components/Footer.js";
 import { Card } from "../../Components/Card.js";
+import { searchbar } from "../../Components/searchbar.js";
 import { mockData } from "../../mock-data/home-page-card-mock-data.js";
 
 const myCardEle = document.getElementById('myCard')
@@ -41,6 +42,7 @@ function injectComponent(containerId, component) {
 document.addEventListener("DOMContentLoaded", () => {
   injectComponent("navbar", navbar());
   injectComponent("footer", footer());
+  injectComponent("searchbar", searchbar());
 });
 
 // JavaScript for Slider Navigation

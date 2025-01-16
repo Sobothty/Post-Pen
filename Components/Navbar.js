@@ -80,7 +80,7 @@ export const navbar = () => {
                             </ul>
                         </li>
                         <!-- Mobile Search Input -->
-                        <li class="flex items-center py-2">
+                        <li id"searchbar" class="flex items-center py-2">
                             <input type="text" placeholder="Search..." class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#FF9067]">
                             <button class="ml-2 bg-[#ff7f50] text-white px-4 py-2 rounded hover:bg-[#FF9067]">Search</button>
                         </li>

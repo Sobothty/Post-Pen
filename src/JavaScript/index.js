@@ -27,55 +27,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // JavaScript for Slider Navigation
-const slider = document.getElementById("slider");
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
+ // Get the necessary elements
+  const slider = document.getElementById('slider');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  const slides = document.querySelectorAll('#slider > div');
+  const totalSlides = slides.length;
+  
+  // Set an initial slide index
+  let currentSlideIndex = 0;
 
-// Get the total number of slides and the width of each slide
-const slides = slider.children;
-const totalSlides = slides.length;
-const slideWidth = slider.clientWidth;
-
-let currentIndex = 0;
-
-// Function to update the slider position
-function updateSliderPosition() {
-  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}
-
-// Event listeners for navigation buttons
-nextButton.addEventListener("click", () => {
-  if (currentIndex < totalSlides - 1) {
-    currentIndex++;
-    updateSliderPosition();
-  } else {
-    currentIndex = 0; // Loop back to the first slide
-    updateSliderPosition();
+  // Function to update the slider's position
+  function updateSliderPosition() {
+    const slideWidth = slides[0].offsetWidth; // Get the width of one slide
+    slider.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
   }
-});
 
-prevButton.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
+  // Handle "Previous" button click
+  prevButton.addEventListener('click', function() {
+    if (currentSlideIndex > 0) {
+      currentSlideIndex--;
+    } else {
+      currentSlideIndex = totalSlides - 1; // Loop back to the last slide
+    }
     updateSliderPosition();
-  } else {
-    currentIndex = totalSlides - 1; // Loop back to the last slide
+  });
+
+  // Handle "Next" button click
+  nextButton.addEventListener('click', function() {
+    if (currentSlideIndex < totalSlides - 1) {
+      currentSlideIndex++;
+    } else {
+      currentSlideIndex = 0; // Loop back to the first slide
+    }
     updateSliderPosition();
-  }
-});
+  });
 
-// Optional: Auto-slide functionality
-let autoSlide = setInterval(() => {
-  nextButton.click();
-}, 5000); // Change slide every 5 seconds
-
-// Pause auto-slide on hover
-const sliderContainer = document.querySelector(
-  ".relative.w-full.h-screen.overflow-hidden"
-);
-sliderContainer.addEventListener("mouseover", () => clearInterval(autoSlide));
-sliderContainer.addEventListener("mouseout", () => {
-  autoSlide = setInterval(() => {
+  // Optional: Automatically move to the next slide every 5 seconds
+  setInterval(function() {
     nextButton.click();
-  }, 5000);
-});
+  }, 5000); // 5000ms = 5 seconds

@@ -3,7 +3,7 @@ export const navbar = () => {
     <section class="w-full bg-white py-4 px-12 shadow-md">
         <div class="grid grid-cols-2 lg:flex items-center justify-between">
             <div class="flex items-center space-x-2 lg:w-1/6">
-                <a href="index.html" class="flex items-center space-x-2">
+                <a href="Post-Pen/index.html" class="flex items-center space-x-2">
                     <img src="../../Asset/Post-Pen-Logo.png" alt="PostPen Logo" alt="PostPen" class="w-8 h-8">
                     <h3 class="text-2xl font-medium">PostPen</h3>
                 </a>

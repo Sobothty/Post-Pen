@@ -1,5 +1,4 @@
 // /components/card.js
-
 export function Card(data) {
   return `
     <div class="margin-l-f bg-white  mt-6 rounded-t-sm hover:shadow-md h-auto" data-aos="fade-up"
@@ -14,7 +13,7 @@ export function Card(data) {
         </div>
 
         <!-- Illustration -->
-        <div class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2">
+        <div class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2 cursor-pointer">
           <img src="${data.illustrationImage}" alt="Illustration"
             class="h-auto w-screen lg:w-[400px] lg:h-[250px] rounded-sm transform transition duration-300 hover:scale-105 object-cover" />
         </div>
@@ -33,20 +32,20 @@ export function Card(data) {
           <div class="grid grid-cols-2 text-sm sm:text-base text-black mb-4">
             <!-- Left Icons -->
             <div class="flex items-center space-x-6">
-              <div class="flex items-center space-x-2">
+              <button class="flex items-center space-x-2">
                 <i class="fas fa-heart"></i>
                 <span>${data.likes}</span>
-              </div>
-              <div class="flex items-center space-x-2">
+              </button>
+              <button class="flex items-center space-x-2">
                 <i class="fas fa-comment"></i>
                 <span>${data.comments}</span>
-              </div>
+              </button>
             </div>
             <!-- Right Icons -->
             <div class="flex justify-end items-center space-x-6">
-              <div>
+              <button>
                 <i class="fas fa-bookmark"></i>
-              </div>
+              </button>
               <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
             </div>
           </div>

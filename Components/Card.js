@@ -1,63 +1,91 @@
-// /components/card.js
 export function Card(data) {
   return `
-    <div class="margin-l-f bg-white  mt-6 rounded-t-sm hover:shadow-md h-auto" data-aos="fade-up"
-      data-aos-anchor-placement="bottom-bottom">
-      <div class="grid grid-rows-[auto,auto,1fr,auto] lg:grid-cols-2 lg:grid-rows-[auto,1fr,auto] gap-5 transition duration-300 lg:mx-5 p-4">
+    <div class="flex justify-center items-center bg-gray-100">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 w-[300px]">
         <!-- Profile Section -->
-        <div class="flex items-center space-x-4 row-start-1 col-span-full lg:col-start-1 lg:col-end-2">
-          <img src="${data.authorImage}" alt="Profile" class="w-9 h-9 rounded-full" />
-          <span class="text-black text-2xl font-bold sm:text-base md:text-lg">
-            <h2">${data.author}</h2>
-          </span>
+        <div class="flex items-center p-4 space-x-4">
+          <img src="${data.authorImage}" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+          <h2 class="text-lg font-semibold">${data.author}</h2>
         </div>
 
-        <!-- Illustration -->
-        <div class="relative overflow-hidden rounded-md row-start-2 col-span-full lg:col-start-3 lg:row-start-2 cursor-pointer">
-          <img src="${data.illustrationImage}" alt="Illustration"
-            class="h-auto w-screen lg:w-[400px] lg:h-[250px] rounded-sm transform transition duration-300 hover:scale-105 object-cover" />
+        <!-- Clickable Illustration to Show Blog Details on Same Page -->
+        <div class="relative cursor-pointer" onclick="showBlogDetailPage('${data.title}', '${data.body}', '${data.illustrationImage}', '${data.author}', '${data.authorImage}', '${data.hashtags}', '${data.likes}', '${data.comments}')">
+          <img src="${data.illustrationImage}" alt="Illustration" class="w-full h-[200px] object-cover"/>
         </div>
 
         <!-- Title and Content -->
-        <div class="flex flex-col row-start-3 col-span-full lg:col-start-1 lg:row-start-2">
-          <h2 class="text-xl sm:text-2xl lg:text-3xl line-clamp-2 font-bold text-gray-900 dark:text-black mb-2">
-            ${data.title}
-          </h2>
-          <p class="text-sm sm:text-base text-black mb-4">
-            <small class="hover:font-bold">${data.hashtags}</small>
-          </p>
-          <p class="text-sm sm:text-base line-clamp-2 text-black mb-6">
-            ${data.body}
-          </p>
-          <div class="grid grid-cols-2 text-sm sm:text-base text-black mb-4">
-            <!-- Left Icons -->
-            <div class="flex items-center space-x-6">
+        <div class="p-4">
+          <h2 class="text-lg font-bold mb-2">${data.title}</h2>
+          <p class="text-sm text-gray-600 mb-4">${data.body}</p>
+          <p class="text-sm text-blue-500 font-medium mb-4">${data.hashtags}</p>
+
+          <!-- Interaction Buttons -->
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-4">
               <button class="flex items-center space-x-2">
-                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart text-red-500"></i>
                 <span>${data.likes}</span>
               </button>
               <button class="flex items-center space-x-2">
-                <i class="fas fa-comment"></i>
+                <i class="fas fa-comment text-blue-500"></i>
                 <span>${data.comments}</span>
               </button>
             </div>
-            <!-- Right Icons -->
-            <div class="flex justify-end items-center space-x-6">
-              <button>
-                <i class="fas fa-bookmark"></i>
-              </button>
-              <button class="px-2 py-1 sm:px-3 sm:py-2">•••</button>
-            </div>
+            <button class="text-gray-400 hover:text-gray-600">
+              <i class="fas fa-bookmark"></i>
+            </button>
           </div>
-          <p class="text-xs sm:text-sm text-blue-300">
-            <small>Date: ${data.date}</small>
-          </p>
         </div>
       </div>
-      <!-- Horizontal line at the bottom -->
-      <div class="row-start-4 col-span-full">
-        <hr class="mt-6 border-gray-300 dark:border-gray-800" />
-      </div>
+    </div>
+  `;
+}
+function showBlogDetailPage(
+  title,
+  body,
+  illustrationImage,
+  author,
+  authorImage,
+  hashtags,
+  likes,
+  comments
+) {
+  // Update the blog details section with the clicked post data
+  const blogDetailSection = document.getElementById("blog-detail-section");
+
+  blogDetailSection.innerHTML = `
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <!-- Post Header -->
+        <div class="flex items-center space-x-4 mb-4">
+            <img src="${authorImage}" alt="User Avatar" class="w-12 h-12 rounded-full">
+            <div>
+                <h1 class="text-xl font-bold hover:bg-gray-100">${title}</h1>
+                <p class="text-gray-500">@${author}</p>
+            </div>
+        </div>
+
+        <!-- Image and Content -->
+        <img src="${illustrationImage}" alt="Blog Image" class="w-full rounded-lg mb-4">
+        
+        <p class="text-gray-700 text-sm">${body}</p>
+
+        <!-- Reactions -->
+        <div class="flex items-center justify-between mt-4">
+            <div class="flex space-x-4">
+                <button type="submit" >❤️</button><span> ${likes}</span>
+                <span>💬 ${comments} Comments</span>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold">${comments} Comments</h3>
+
+            <!-- Comment Input -->
+            <div class="mt-6">
+                <input type="text" placeholder="Write a comment..." class="w-full p-3 border border-gray-300 rounded-lg">
+            </div>
+        </div>
     </div>
   `;
 }

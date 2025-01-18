@@ -1,130 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>General Blog</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  
-  <script type="module" src="./src/JavaScript/index.js " defer></script>
-  <style>
-    .margin-l-f {
-      margin: 0 4rem;
+    <script type="module" src="./src/JavaScript/index.js " defer></script>
+    <style>
+      .whiteSmoke {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
 
-    }
-    .whiteSmoke{
-      background-color: #F5F5F5;
-    }
-  </style>
-</head>
-
-<body >
-  <header id="navbar" class="sticky top-0 z-50"></header>
-  <main class="whiteSmoke">
-    <section class="relative w-full h-screen overflow-hidden">
-      <!-- Slider Container -->
-      <div class="relative w-full h-full">
-        <!-- Slider Items -->
-        <div id="slider" class="flex w-full h-full transition-transform duration-500 ">
-          <!-- Slide 1 -->
-          <div class="w-full flex-shrink-0 relative h-full">
-            <img src="/Asset/Photo/Ai-Photo2.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="absolute bottom-32 left-16 text-white  ">
-              <div class="backdrop-blur-lg p-1 rounded-md">
-              <h2 class="text-3xl font-bold">
-                Should You Use AI as a Writer?
-              </h2>
-              <p class="mt-1 text-lg ">
-                A Shift That Puts You Ahead of 99% of Writers
-              </p>
-            </div>
-              <button class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition">
-                Read More
-              </button>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-           <div class="w-full flex-shrink-0 relative h-full">
-            <img src="/Asset/Photo/education1.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="absolute bottom-32 left-16 text-white  ">
-              <div class="backdrop-blur-lg p-1 rounded-md">
-              <h2 class="text-3xl font-bold">
-                Should You Use AI as a Writer?
-              </h2>
-              <p class="mt-1 text-lg ">
-                Learning is the process of acquiring new understanding <br> knowledge, behaviors, skills, values, attitudes, and preferences
-              </p>
-            </div>
-              <button class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition">
-                Read More
-              </button>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
+  <body>
+    <header id="navbar" class="sticky top-0 z-50"></header>
+    <main class="whiteSmoke">
+      <section class="relative w-full h-screen overflow-hidden">
+        <!-- Slider Container -->
+        <div class="relative w-full h-full">
+          <!-- Slider Items -->
+          <div
+            id="slider"
+            class="flex w-full h-full transition-transform duration-500"
+          >
+            <!-- Slide 1 -->
             <div class="w-full flex-shrink-0 relative h-full">
-            <img src="/Asset/cyber.png" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="absolute bottom-32 left-16 text-white  ">
-              <div class="backdrop-blur-lg p-1 rounded-md">
-              <h2 class="text-3xl font-bold">
-                What is cyber security?
-              </h2>
-              <p class="mt-1 text-lg ">
-                Cybersecurity is the practice of protecting <br>systems, networks, and programs from digital attacks
-              </p>
+              <img
+                src="/Asset/Photo/Ai-Photo2.jpg"
+                alt="Slide 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-32 left-16 text-white">
+                <div class="backdrop-blur-lg p-1 rounded-md">
+                  <h2 class="text-3xl font-bold">
+                    Should You Use AI as a Writer?
+                  </h2>
+                  <p class="mt-1 text-lg">
+                    A Shift That Puts You Ahead of 99% of Writers
+                  </p>
+                </div>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Read More
+                </button>
+              </div>
             </div>
-              <button class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition">
-                Read More
-              </button>
+
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 relative h-full">
+              <img
+                src="/Asset/Photo/education1.jpg"
+                alt="Slide 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-32 left-16 text-white">
+                <div class="backdrop-blur-lg p-1 rounded-md">
+                  <h2 class="text-3xl font-bold">
+                    Should You Use AI as a Writer?
+                  </h2>
+                  <p class="mt-1 text-lg">
+                    Learning is the process of acquiring new understanding
+                    <br />
+                    knowledge, behaviors, skills, values, attitudes, and
+                    preferences
+                  </p>
+                </div>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 relative h-full">
+              <img
+                src="/Asset/cyber.png"
+                alt="Slide 1"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-32 left-16 text-white">
+                <div class="backdrop-blur-lg p-1 rounded-md">
+                  <h2 class="text-3xl font-bold">What is cyber security?</h2>
+                  <p class="mt-1 text-lg">
+                    Cybersecurity is the practice of protecting <br />systems,
+                    networks, and programs from digital attacks
+                  </p>
+                </div>
+                <button
+                  class="mt-2 px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition"
+                >
+                  Read More
+                </button>
+              </div>
             </div>
           </div>
+
+          <!-- Navigation Arrows -->
+          <button
+            id="prev"
+            class="absolute top-1/2 left-3 -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out"
+          >
+            &#8592;
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-3 -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out"
+          >
+            &#8594;
+          </button>
         </div>
+      </section>
+ <h2 class=" flex justify-center items-center mt-7 text-[3rem] font-bold">New Infornation & Technologise</h2>
+   <section class="w-[90%] m-auto py-8">
+    <div id="myCard" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Cards will render from API -->
+    </div>
+</section>
 
-        <!-- Navigation Arrows -->
-        <button id="prev"
-          class="absolute top-1/2 left-3 -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out">
-          &#8592;
-        </button>
-        <button id="next"
-          class="absolute top-1/2 right-3 -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition duration-300 ease-in-out">
-          &#8594;
-        </button>
-      </div>
-    </section>
 
-    <section class="w-[100%] m-auto">
-      <div id="myCard">
-        <!-- 
-          Data will render form JS
-        -->
-      </div>
-    </section>
-    
-  </main>
-  <footer id="footer"></footer>
-  <script src="../JavaScript/index.js"></script>
-  <script src=""></script>
-  <script>
-    function toggleDropdown(id) {
-      const dropdown = document.getElementById(id);
-      dropdown.classList.toggle("hidden");
-    }
 
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenu.classList.toggle("hidden");
-    }
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../JavaScript/index.js"></script>
+    <script src=""></script>
+    <script>
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
+      }
 
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

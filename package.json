@@ -94,7 +94,7 @@
     "which": "^2.0.2",
     "wrap-ansi": "^8.1.0",
     "wrap-ansi-cjs": "^7.0.0",
-    "yaml": "^2.7.0"
+    "yaml": "^2.8.0"
   },
   "scripts": {
     "dev" : "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
